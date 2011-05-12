@@ -1,2 +1,14 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+
+document.observe('dom:loaded',function(){ 
+  
+  var h1DemoIndex = $('demoIndex');
+  if (h1DemoIndex) {
+    h1DemoIndex.observe('click',function(){
+      h1DemoIndex.remove();
+    });
+  };
+  
+  
+});
+
+
